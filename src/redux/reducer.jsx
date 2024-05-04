@@ -20,7 +20,7 @@ const reducer = (state = initialState, action) => {
     case DELETE:
       return {
         ...state,
-        todos: state.todos.filter((todo) => todo.id !== action.payload.id),
+        todos: state.todos.filter((todo, index) => index !== action.payload.id),
       };
 
     case FILTER:

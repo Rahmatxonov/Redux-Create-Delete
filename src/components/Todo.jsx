@@ -15,8 +15,8 @@ const Todo = () => {
     }
   };
 
-  const handleDeleteTodo = (id) => {
-    dispatch(deleteTodo(id));
+  const handleDeleteTodo = (index) => {
+    dispatch(deleteTodo(index));
   };
 
   return (
